@@ -1,41 +1,37 @@
-import { Link } from "react-router-dom";
-
-const InputLoginForm = () => {
+const InputRegisterForm = () => {
   return (
     <input className="outline-none border-2 border-black rounded-md px-2"></input>
   );
 };
 
-const LoginForm = () => {
+const RegisterForm = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <form>
         <div className="flex flex-col">
-          <label className="font-bold">Username</label>
-          <InputLoginForm />
+          <label className="font-bold mt-4">Email</label>
+          <InputRegisterForm />
+          <label className="font-bold mt-4">Username</label>
+          <InputRegisterForm />
           <label className="font-bold mt-4">Password</label>
-          <InputLoginForm />
+          <InputRegisterForm />
+          <label className="font-bold mt-4">Confirm Password</label>
+          <InputRegisterForm />
           <button
             className="bg-black text-white rounded-md py-2 mt-6"
             type="submit"
           >
-            Login
+            Register
           </button>
-          <span className="mt-1 text-sm">
-            If you are not registered click{" "}
-            <Link className="text-blue-600" to="/register">
-              here
-            </Link>
-          </span>
         </div>
       </form>
     </div>
   );
 };
-export const LoginPage = () => {
+export const RegisterPage = () => {
   return (
     <div className="">
-      <LoginForm />
+      <RegisterForm />
     </div>
   );
 };
