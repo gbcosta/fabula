@@ -1,0 +1,6 @@
+{
+  "watch": ["server/"],
+  "ext": "js,ts,json",
+  "ignore": ["dist/"],
+  "exec": "bun server/index.ts"
+}
