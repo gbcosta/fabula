@@ -10,7 +10,7 @@ const LoginForm = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <form>
-        <div className="flex flex-col">
+        <div className="flex flex-col border-2 border-black p-8 rounded-md">
           <label className="font-bold">Username</label>
           <InputLoginForm />
           <label className="font-bold mt-4">Password</label>
@@ -21,7 +21,7 @@ const LoginForm = () => {
           >
             Login
           </button>
-          <span className="mt-1 text-sm">
+          <span className="mt-2 text-sm">
             If you are not registered click{" "}
             <Link className="text-blue-600" to="/register">
               here

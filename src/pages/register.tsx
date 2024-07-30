@@ -8,7 +8,7 @@ const RegisterForm = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <form>
-        <div className="flex flex-col">
+        <div className="flex flex-col border-2 border-black p-8 rounded-md">
           <label className="font-bold mt-4">Email</label>
           <InputRegisterForm />
           <label className="font-bold mt-4">Username</label>
