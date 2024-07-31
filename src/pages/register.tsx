@@ -32,12 +32,18 @@ const RegisterForm = () => {
           <label className="font-bold mt-4">Username</label>
           <FormInput register={register} field="username" errors={errors} />
           <label className="font-bold mt-4">Password</label>
-          <FormInput register={register} field="password" errors={errors} />
+          <FormInput
+            register={register}
+            field="password"
+            errors={errors}
+            type="password"
+          />
           <label className="font-bold mt-4">Confirm Password</label>
           <FormInput
             register={register}
             field="confirmPassword"
             errors={errors}
+            type="password"
           />
           <button
             className="bg-black text-white rounded-md py-2 mt-6"

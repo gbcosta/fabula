@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormInput } from "@components/formInput";
 
 const schema = z.object({
-  username: z.string().min(1, { message: "Name is required" }),
+  username: z.string().min(6, { message: "Minimal length is 6" }),
   password: z.string().min(8, { message: "Minimal length is 8" }),
 });
 
@@ -27,7 +27,12 @@ const LoginForm = () => {
           <label className="font-bold">Username</label>
           <FormInput register={register} field={"username"} errors={errors} />
           <label className="font-bold mt-4">Password</label>
-          <FormInput register={register} field={"password"} errors={errors} />
+          <FormInput
+            type="password"
+            register={register}
+            field={"password"}
+            errors={errors}
+          />
           <button
             className="bg-black text-white rounded-md py-2 mt-6"
             type="submit"
