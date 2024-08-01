@@ -5,9 +5,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 const schema = z.object({
   email: z.string().email({ message: "email is required" }),
-  username: z.string().min(1, "username is required"),
+  username: z.string().min(6, "Minimal length is 6"),
   password: z.string().min(8, "Minimal length is 8"),
-  confirmPassword: z.string().min(8, "Password needs to be the same"),
+  confirmPassword: z.string().min(8, "Minimal length is 8"),
 });
 
 const RegisterForm = () => {

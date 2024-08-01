@@ -5,8 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormInput } from "@components/formInput";
 
 const schema = z.object({
-  username: z.string().min(6, { message: "Minimal length is 6" }),
-  password: z.string().min(8, { message: "Minimal length is 8" }),
+  username: z.string(),
+  password: z.string(),
 });
 
 const LoginForm = () => {
